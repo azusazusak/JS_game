@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Falling Objects</title>
+</head>
+<body>
+
+    <div id="gameArea">
+
+        <div class="counters">
+            <div class="counter">
+                <h2>Time Left</h2>
+                <h2 id="timer" class="counterNumber">0</h2>
+                <h2>s</h2>
+            </div>
+            <div class="counter">
+                <h2>Score</h2>
+                <h2 id="score" class="counterNumber">0</h2>
+            </div>
+        </div>
+        <div class="message">
+            <div id="instruction">
+                <p>Catch the falling fruits and earn points!</p>
+                <p>Press the left and right arrow buttons on the keyboard to move the basket.</p>
+                <p>The smaller the fruits, the more points you get.</p>
+                <p>Be careful, you'll lose points if you catch veggies!</p>
+            </div>
+            <button id="startBtn">Start Game</button>
+            <div id="timesUp">Time's Up!</div>
+            <button id="playAgainBtn">Play Again</button>
+        </div>
+        
+        <img src="imgs/basket.png" alt="Basket" id="basket">
+    </div>
+    <div id="ground"></div>
+
+
+<script src="js/timer.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
